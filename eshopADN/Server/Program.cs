@@ -1,6 +1,7 @@
 global using eshopADN.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using eshopADN.Server.Data;
+global using eshopADN.Server.Services.ProductService;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase"));
 });
 
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
