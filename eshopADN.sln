@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshopADN.Server", "eshopADN\Server\eshopADN.Server.csproj", "{1AB5306B-6DB1-4389-81CB-DC1A5EB08A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshopADN.Client", "eshopADN\Client\eshopADN.Client.csproj", "{258C088C-5F1F-44D1-83F3-1BB22EB3ECBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eshopADN.Shared", "eshopADN\Shared\eshopADN.Shared.csproj", "{E0554AC8-9373-4605-BDF7-733A57C4949E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AB5306B-6DB1-4389-81CB-DC1A5EB08A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB5306B-6DB1-4389-81CB-DC1A5EB08A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB5306B-6DB1-4389-81CB-DC1A5EB08A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB5306B-6DB1-4389-81CB-DC1A5EB08A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258C088C-5F1F-44D1-83F3-1BB22EB3ECBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258C088C-5F1F-44D1-83F3-1BB22EB3ECBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258C088C-5F1F-44D1-83F3-1BB22EB3ECBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258C088C-5F1F-44D1-83F3-1BB22EB3ECBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0554AC8-9373-4605-BDF7-733A57C4949E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0554AC8-9373-4605-BDF7-733A57C4949E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0554AC8-9373-4605-BDF7-733A57C4949E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0554AC8-9373-4605-BDF7-733A57C4949E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/bin/Debug/net6.0/eshopADN.Shared.deps.json
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/bin/Debug/net6.0/eshopADN.Shared.dll
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/bin/Debug/net6.0/ref/eshopADN.Shared.dll
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/bin/Debug/net6.0/eshopADN.Shared.pdb
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.csproj.AssemblyReference.cache
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.AssemblyInfoInputs.cache
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.AssemblyInfo.cs
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.csproj.CoreCompileInputs.cache
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.dll
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/ref/eshopADN.Shared.dll
+/home/daniele/RiderProjects/eshopADN/eshopADN/Shared/obj/Debug/net6.0/eshopADN.Shared.pdb
