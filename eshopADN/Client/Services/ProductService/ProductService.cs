@@ -18,4 +18,10 @@ public class ProductService : IProductService
             Products = response.Data;
         }
     }
+
+    public async Task<ServiceResponse<Product>> GetProductByIdAsync(int id)
+    {
+        var response = await _httpClient.GetFromJsonAsync<ServiceResponse<Product>>($"api/product/{id}");
+        return response!;
+    }
 }

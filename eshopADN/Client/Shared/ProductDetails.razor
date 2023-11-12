@@ -1,0 +1,44 @@
+@page "/product/{id:int}"
+@inject IProductService ProductService
+
+<h3>Dettagli del prodotto</h3>
+
+@if (_product == null)
+{
+    <span>@_message</span>
+}
+else
+{
+    <div class="media">
+        <div class="media-img-wrapper">
+            <img class="media-img" src="@_product.ImagePath" alt="@_product.Titolo"/>
+        </div>
+        <div class="media-body">
+            <h2 class="mb-0">@_product.Titolo</h2>
+            <p>@_product.Descrizione</p>
+            <h4 class="price">@_product.Prezzo</h4>
+        </div>
+    </div>
+}
+@code {
+    private Product? _product = null;
+    private string? _message= string.Empty;
+    
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _message = "Caricamento";
+        var response = await ProductService.GetProductByIdAsync(Id);
+        switch (response.Success)
+        {
+            case true:
+                _product = response.Data;
+                break;
+            case false:
+                _message = response.Message + " " + "Il tuo prodotto non è stato trovato";
+                break;
+        }
+    }
+}

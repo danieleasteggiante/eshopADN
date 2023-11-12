@@ -15,6 +15,13 @@ public class ProductController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<ServiceResponse<List<Product>>>> GetProduct()
     {
-        return Ok(await _productService.GetProductAsync());
+        return Ok(await _productService.GetProductsGetAsync());
     }
+    
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<ServiceResponse<Product>>> GetProduct(int id)
+    {
+        return Ok(await _productService.GetProductByIdAsync(id));
+    }
+
 }
