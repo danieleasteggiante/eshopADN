@@ -18,6 +18,17 @@ else
             <p>@_product.Descrizione</p>
             <h4 class="price">@_product.Prezzo</h4>
         </div>
+        @if (!_product.IsAvailable)
+        { 
+            <div class="alert alert-warning" role="alert">
+                <strong>Attenzione!</strong> Prodotto disponibile solo su ordinazione.
+                <form>
+                    <input type="text" placeholder="email"/>
+                    <input type="text" placeholder="nome"/>
+                    <button type="submit" class="btn btn-primary">Richiedi informazioni</button>
+                </form>
+            </div>
+        }
     </div>
 }
 @code {

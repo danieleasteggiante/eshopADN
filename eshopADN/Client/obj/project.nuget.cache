@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5xKCP2GrIlglp51EQmOOtzFI22kvAbBA51AcjvN1MqX0lrYPUXC6QyMJyAuuD+/OcnlzABHo0R6q0uDx2hzzoA==",
+  "dgSpecHash": "mFXfjR7tJ9ue78LBuaALB31KEPg1dlKf3RQyKzwLdSkyxzkgPYf1UD0b7PlFeFKsezvHdUTQKCiI6YIlIuK4rA==",
   "success": true,
   "projectFilePath": "/home/daniele/RiderProjects/eshopADN/eshopADN/Client/eshopADN.Client.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,7 @@
     "/home/daniele/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/daniele/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
     "/home/daniele/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512",
-    "/home/daniele/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.24/microsoft.netcore.app.runtime.mono.browser-wasm.6.0.24.nupkg.sha512"
+    "/home/daniele/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.25/microsoft.netcore.app.runtime.mono.browser-wasm.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }
