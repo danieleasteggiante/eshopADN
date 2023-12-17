@@ -10,13 +10,19 @@ public class ProductService : IProductService
     public async Task<ServiceResponse<List<Product>>> GetProductsGetAsync()
     {
         return new ServiceResponse<List<Product>>()
-            { Data = await _context.Products.ToListAsync() };
+            { Data = await _context.Products
+                .Include(p=>p.ProductVariants)
+                .ToListAsync() };
     }
 
     public async Task<ServiceResponse<Product>> GetProductByIdAsync(int id)
     {
         var response = new ServiceResponse<Product>();
-        var result = await _context.FindAsync<Product>(id);
+        var result = await _context.Products
+            .Include(x => x.ProductVariants)
+            .Include(x => x.Category)
+            .FirstOrDefaultAsync(x => x.Id == id);
+
         if(result == null)
         {
             response.Success = false;
@@ -33,6 +39,7 @@ public class ProductService : IProductService
         {
             Data = await _context.Products
                 .Where(x => x.Category != null && x.Category.Url.ToLower().Equals(categoryUrl.ToLower()))
+                .Include(p=>p.ProductVariants)
                 .ToListAsync()
         };
         return response;

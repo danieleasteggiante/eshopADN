@@ -19,7 +19,7 @@ public class ProductService : IProductService
             await _httpClient.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
         if(response != null && response.Data != null)
             Products = response.Data;
-        ProductChange.Invoke();
+        ProductChange?.Invoke();
     }
     
     public async Task<ServiceResponse<Product>> GetProductByIdAsync(int id)
