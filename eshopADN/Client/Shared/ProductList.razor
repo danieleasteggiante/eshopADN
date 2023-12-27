@@ -30,7 +30,7 @@ else
                         <span>Disponibile su richiesta</span>
                     }
                     <h5 class="price">
-                        @* $@p.Prezzo *@
+                            <p>@GetPrice(@p)</p>
                     </h5>
                 </div>
             </li>
@@ -47,5 +47,11 @@ else
     public void Dispose()
     {
         ProductService.ProductChange -= StateHasChanged;
+    }
+    
+    private string GetPrice(Product product)
+    {
+        return $"A partire da {product.ProductVariants.Min(variant => variant.Price)}"[..^2];
+           
     }
 }

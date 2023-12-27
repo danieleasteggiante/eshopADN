@@ -12,6 +12,7 @@ public class ProductService : IProductService
         return new ServiceResponse<List<Product>>()
             { Data = await _context.Products
                 .Include(p=>p.ProductVariants)
+                .ThenInclude(v=>v.ProductType)
                 .ToListAsync() };
     }
 
@@ -19,7 +20,9 @@ public class ProductService : IProductService
     {
         var response = new ServiceResponse<Product>();
         var result = await _context.Products
+                // Include serve per evitare che il lazy loading restituisca un dato senza i suoi figli
             .Include(x => x.ProductVariants)
+            .ThenInclude(v=>v.ProductType)
             .Include(x => x.Category)
             .FirstOrDefaultAsync(x => x.Id == id);
 
