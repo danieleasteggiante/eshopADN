@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Byb2R1Y3REZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/daniele/RiderProjects/eshopADN/eshopADN/Client/Shared/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1NlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/daniele/RiderProjects/eshopADN/eshopADN/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

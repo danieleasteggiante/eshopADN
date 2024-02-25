@@ -47,4 +47,31 @@ public class ProductService : IProductService
         };
         return response;
     }
+
+    public async Task<ServiceResponse<List<Product>>> SearchProduct(string searchTerm)
+    {
+        return new ServiceResponse<List<Product>>()
+        {
+            Data = await SearchProductToListAsync(searchTerm)
+        };
+    }
+    private async Task<List<Product>> SearchProductToListAsync(string searchTerm)
+    {
+        return await _context.Products
+            .Where(product => product.Titolo.ToLower().Contains(searchTerm.ToLower()) ||
+                              product.Descrizione.ToLower().Contains(searchTerm.ToLower()))
+            .Include(p => p.ProductVariants).ToListAsync();
+    }
+
+    public async Task<ServiceResponse<List<string>>> GetSuggestions(string searchTerm)
+    {
+        List<Product> products = await SearchProductToListAsync(searchTerm);
+        return new ServiceResponse<List<string>>
+        {
+            Data = products.Where(p => p.Titolo.ToLower().Contains(searchTerm.ToLower()))
+                .Select(p => p.Titolo).Distinct().ToList()
+        };
+        
+    }
+
 }

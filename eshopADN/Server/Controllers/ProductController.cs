@@ -29,5 +29,15 @@ public class ProductController : ControllerBase
     {
         return Ok(await _productService.GetProductsByCategoryAsync(categoryUrl));
     }
+   [HttpGet("search/{searchTerm}")]
+    public async Task<ActionResult<ServiceResponse<List<Product>>>> SearchProduct(string searchTerm)
+    {
+        return Ok(await _productService.SearchProduct(searchTerm));
+    }   
+    [HttpGet("searchSuggestion/{searchTerm}")]
+    public async Task<ActionResult<ServiceResponse<List<Product>>>> SearchProductSuggestion(string searchTerm)
+    {
+        return Ok(await _productService.GetSuggestions(searchTerm));
+    }
 
 }

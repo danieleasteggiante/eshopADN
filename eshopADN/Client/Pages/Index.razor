@@ -1,5 +1,6 @@
 ﻿@page "/"
 @page "/{categoryUrl}"
+@page "/search/{searchText}"
 @inject IProductService ProductService
 
 <PageTitle>Shop Arte di Nadia</PageTitle>
@@ -9,10 +10,15 @@
 @code
 {
     [Parameter]
-    public string? CategoryUrl { get; set; }
+    public string? CategoryUrl { get; set; }    
+    [Parameter]
+    public string? SearchText { get; set; }
 
     protected override async Task OnParametersSetAsync()
     {
-        await ProductService.GetProducts(CategoryUrl);
+        if (SearchText != null)
+            await ProductService.SearchProduct(SearchText);
+        else
+            await ProductService.GetProducts(CategoryUrl);
     }
 }
