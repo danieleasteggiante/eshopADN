@@ -50,6 +50,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/daniele/RiderProjects/eshopADN/eshopADN/Client/Shared/EshopAdn.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0VzaG9wQWRuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-mw30291bn9
+
+[/home/daniele/RiderProjects/eshopADN/eshopADN/Client/Shared/FeaturedProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0ZlYXR1cmVkUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0prgqwvzzn
+
 [/home/daniele/RiderProjects/eshopADN/eshopADN/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cw7m3bv942

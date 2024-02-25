@@ -98,7 +98,9 @@ public class DataContext : DbContext
                     "Nicole ha trent'anni. Il mondo da tempo non è più quel luogo magico in cui credeva durante l'infanzia, tuttavia alla sua piccola Desirée, cinque anni, sua unica ragione di vita, vorrebbe mostrarlo così come lo ricorda. Ma il destino è beffardo e si prende gioco di lei, mandando all'aria ogni suo progetto, portandola a mettere in discussione ogni sua fede e costringendola ad affrontare quel segreto che si porta dentro e che, lentamente, la sta portando via.",
                 ImagePath =
                     "https://www.mondadoristore.it/img/Le-bastava-profumo-dell-erba-Nadia-Cristoni/ea978886628471/BL/BL/01/NZO/?tit=Le+bastava+il+profumo+dell%27erba&aut=Nadia+Cristoni",
-                CategoryId = 1
+                CategoryId = 1,
+                Featured = true
+
 
             },
             new Product
@@ -129,7 +131,8 @@ public class DataContext : DbContext
                     "Progettazione di ritratti su misure standard o personalizzate. Il ritratto è un'opera d'arte che rappresenta una persona o un gruppo di persone. Il ritratto può essere realizzato in diversi modi: pittura, disegno, fotografia, scultura, ecc. Il ritratto è un'opera d'arte che rappresenta una persona o un gruppo di persone. Il ritratto può essere realizzato in diversi modi: pittura, disegno, fotografia, scultura, ecc.",
                 ImagePath =
                     "https://www.artedinadia.it/wp-content/gallery/quadri/esercitazione-a-spatola.jpg",
-                CategoryId = 2
+                CategoryId = 2,
+                Featured = true
             },
             new Product
             {
@@ -139,7 +142,8 @@ public class DataContext : DbContext
                     "Decorazioni su pareti, tessuti, mobili e oggetti. Soggetti e colori personalizzabili. Il ritratto è un'opera d'arte che rappresenta una persona o un gruppo di persone. Il ritratto può essere realizzato in diversi modi: pittura, disegno, fotografia, scultura, ecc. Il ritratto è un'opera d'arte che rappresenta una persona o un gruppo di persone. Il ritratto può essere realizzato in diversi modi: pittura, disegno, fotografia, scultura, ecc.",
                 ImagePath =
                     "https://www.artedinadia.it/wp-content/gallery/quadri/esercitazione-a-spatola.jpg",
-                CategoryId = 3
+                CategoryId = 3,
+                Featured = true
             }
         );
 

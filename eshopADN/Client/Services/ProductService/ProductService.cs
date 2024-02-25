@@ -15,7 +15,8 @@ public class ProductService : IProductService
     public async Task GetProducts(string? categoryUrl = null)
     {
         var response = categoryUrl == null ? 
-            await _httpClient.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product"):
+            // TODO meglio togliere il /featured e gestire con un metodo specifico?
+            await _httpClient.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product/featured"):
             await _httpClient.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/category/{categoryUrl}");
         if(response != null && response.Data != null)
             Products = response.Data;

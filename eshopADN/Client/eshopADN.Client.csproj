@@ -15,4 +15,10 @@
         <ProjectReference Include="..\Shared\eshopADN.Shared.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Shared\FeaturedProduct.razor.css">
+        <DependentUpon>FeaturedProduct.razor</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>

@@ -16,6 +16,16 @@ public class ProductService : IProductService
                 .ToListAsync() };
     }
 
+    public async Task<ServiceResponse<List<Product>>> GetFeaturedProductsAsync()
+    {
+        return new ServiceResponse<List<Product>>()
+        { Data = await _context.Products
+            .Include(p=>p.ProductVariants)
+            .ThenInclude(v=>v.ProductType)
+            .Where(p => p.Featured)
+            .ToListAsync() };
+    }
+
     public async Task<ServiceResponse<Product>> GetProductByIdAsync(int id)
     {
         var response = new ServiceResponse<Product>();

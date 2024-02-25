@@ -4,8 +4,14 @@
 @inject IProductService ProductService
 
 <PageTitle>Shop Arte di Nadia</PageTitle>
-
-<ProductList />
+@if(SearchText == null && CategoryUrl == null)
+{
+    <FeaturedProduct />
+}
+else
+{
+    <ProductList  />
+}
 
 @code
 {

@@ -2,7 +2,7 @@
 @inject IProductService ProductService;
 
 <div class="input-group">
-    // bind-value and bind-value:event servono per leggere e aggiornare il valore della proprietà searchText
+    
     <input @bind-value="searchText"
            @bind-value:event="oninput"
            type="search"
@@ -23,6 +23,8 @@
 </div>
 
 @code {
+    // bind-value and bind-value:event servono per leggere e aggiornare il valore della proprietà searchText
+
     private string searchText = string.Empty;
     private List<string> suggestions = new List<string>();
     protected ElementReference searchInput;

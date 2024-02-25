@@ -822,3 +822,5 @@
 /home/daniele/RiderProjects/eshopADN/eshopADN/Client/obj/Debug/net6.0/build-gz/lzUtf1ZK.gz
 /home/daniele/RiderProjects/eshopADN/eshopADN/Client/obj/Debug/net6.0/build-gz/exNzdkxW.gz
 /home/daniele/RiderProjects/eshopADN/eshopADN/Client/obj/Debug/net6.0/build-gz/BGxh+ed2.gz
+/home/daniele/RiderProjects/eshopADN/eshopADN/Client/obj/Debug/net6.0/scopedcss/Shared/EshopAdn.razor.rz.scp.css
+/home/daniele/RiderProjects/eshopADN/eshopADN/Client/obj/Debug/net6.0/scopedcss/Shared/FeaturedProduct.razor.rz.scp.css

@@ -39,5 +39,10 @@ public class ProductController : ControllerBase
     {
         return Ok(await _productService.GetSuggestions(searchTerm));
     }
+    [HttpGet("featured")]
+    public async Task<ActionResult<ServiceResponse<List<Product>>>> GetFeaturedProducts()
+    {
+        return Ok(await _productService.GetFeaturedProductsAsync());
+    }
 
 }

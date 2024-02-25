@@ -3,7 +3,7 @@ namespace eshopADN.Server.Services.ProductService;
 public interface IProductService
 {
     Task<ServiceResponse<List<Product>>> GetProductsGetAsync();
-    
+    Task<ServiceResponse<List<Product>>> GetFeaturedProductsAsync();
     Task<ServiceResponse<Product>> GetProductByIdAsync(int id);
     Task<ServiceResponse<List<Product>>> GetProductsByCategoryAsync(string categoryUrl);
     Task<ServiceResponse<List<Product>>> SearchProduct(string searchTerm);
